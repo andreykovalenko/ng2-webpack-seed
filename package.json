@@ -1,0 +1,22 @@
+{
+  "name": "webpack-tut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.26.0",
+    "webpack": "2",
+    "webpack-dev-server": "2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "ramda": "^0.23.0"
+  }
+}
