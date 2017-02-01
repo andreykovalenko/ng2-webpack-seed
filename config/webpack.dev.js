@@ -15,8 +15,6 @@ const METADATA = {
   isDevServer: helpers.isWebpackDevServer()
 
 };
-console.log('--------->', helpers.root('dist'));
-
 
 module.exports = {
    devtool: 'cheap-module-source-map',
@@ -29,7 +27,7 @@ module.exports = {
   entry: {
       polyfills: './src/polyfills.browser.ts',
       vendor: ['moment', 'ramda'],
-      app: './src/index'
+      app: './src/main.browser'
   },
   output: {
     filename: '[name].bundle.js',
@@ -50,7 +48,7 @@ module.exports = {
   }),
     new webpack.optimize.CommonsChunkPlugin({
       minChunks: Infinity,
-      names: ['vendor', 'manifest'],
+      names: ['vendor', 'manifest', 'polyfills'],
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
