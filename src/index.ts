@@ -2,6 +2,9 @@
 import moment from 'moment';
 import R from 'ramda';
 
+import a from './a';
+
+a();
 function component () {
   var appEl = document.getElementById('app');
 
