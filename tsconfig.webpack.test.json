@@ -6,7 +6,11 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
+    "sourceMap": false,
+    "inlineSourceMap": true,
+    "compilerOptions": {
+      "removeComments": true
+    },
     "noEmit": true,
     "noEmitHelpers": true,
     "importHelpers": true,
