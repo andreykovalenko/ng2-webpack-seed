@@ -95,7 +95,16 @@ module.exports = function (options) {
             {
               loader: 'awesome-typescript-loader',
               options: {
-                configFileName: 'tsconfig.webpack.test.json'
+                // configFileName: 'tsconfig.webpack.test.json'
+                sourceMap: false,
+                inlineSourceMap: true,
+                compilerOptions: {
+
+                  // Remove TypeScript helpers to be injected
+                  // below by DefinePlugin
+                  removeComments: true
+
+                }
               }
 
             },
@@ -153,7 +162,10 @@ module.exports = function (options) {
           exclude: [
             /\.(e2e|spec)\.ts$/,
             /node_modules/
-          ]
+          ],
+          query: {
+              esModules: true
+          }
         }
 
       ]

@@ -1,5 +1,5 @@
 {
-  "name": "webpack-tut",
+  "name": "ak-ng-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -27,6 +27,7 @@
     "css-loader": "^0.26.0",
     "file-loader": "^0.10.0",
     "html-webpack-plugin": "^2.26.0",
+    "istanbul-instrumenter-loader": "^1.2.0",
     "jasmine-core": "^2.5.2",
     "json-loader": "^0.5.4",
     "karma": "^1.2.0",
